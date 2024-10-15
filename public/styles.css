@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1d1f22;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(48, 47, 47, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #DBD3D3;
+    font-weight: 800;
+}
+
+h1, h2 {
+    color: #DBD3D3;
+}
+
+#manual-input {
+    width: 100%;
+    height: 100px;
+    resize: none; 
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+    background-color: #f9f9f9;
+}
+
+.btn {
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #3613b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.translation-section {
+    color: #DBD3D3;
+    border-radius: 8px;
+}
+
+.output-section, .nlp-section, .translation-section {
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#transcription, #output, #hashtags, #summary {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Style for the language-select dropdown */
+#language-select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    background-color: #ddd6d6;
+    border-radius: 4px;
+    transition: background-color 0.8s ease, border-color 0.8s ease; 
+}
+
+/* Change background color and border on focus (when clicked or hovered) */
+#language-select:focus, #language-select:hover {
+    background-color: #8d949b; 
+    border-color: #3613b4; 
+}
+
+/* Optional transition for smoother interaction */
+#language-select:focus {
+    outline: none; 
+}
+
+/* Fixed position for manual input */
+#manual-input {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 0;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.btn.bounce {
+    animation: bounce 0.5s;
+}
+
+/* New styles for centering buttons and transcription */
+.speech-section {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+.recording-buttons {
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2px; 
+}
+
+#transcription {
+    width: 100%;
+    text-align: left; 
+    margin-top: 10px; 
+    padding: 10px; 
+    background-color: #8d949b;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+}
+
+/* Centering Translate Button */
+#translate-manual {
+    margin: 20px auto; 
+}
