@@ -4,7 +4,7 @@ import cors from 'cors';
 import { translate } from 'google-translate-api-x'; // Use the correct import
 
 const app = express();
-const PORT = 3000;
+const PORT =  process.env.PORT ||3000;
 
 // Middleware setup
 app.use(bodyParser.json());
